@@ -36,7 +36,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--todo-site);
     list-style: none;
 }
 h2{
@@ -74,7 +74,7 @@ html{}
   
 /* BODY */
 body{
-    font-family: var(--todo-site);
+    font-family: 'Lato';
 }
 /* BODY */
   
@@ -268,13 +268,13 @@ main{}
 
 p {
     color: var(--cinza-claro);
-    font-size: 20px;
+   
 }
 .secaoCursos {
     background-color: var(--branco);
     width: 100vw;
     height: auto;
-    font-family: var(--todo-site);
+    font-size: 20px;
 }
 
 .secaoCursos article {
@@ -303,7 +303,8 @@ p {
 }      
 
 li h3 {
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 450;
 }
 
 .secaoCalendar{
@@ -339,7 +340,6 @@ li h3 {
 
 .calendario-data {
     background: var(--azul-escuro);
-    font-size: var(--botao-signup-calendario);
     width: 100%;
     height: 125px;
     display: flex;
@@ -347,27 +347,43 @@ li h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: var(--branco);   
+    color: var(--branco);
+    font-size: var(--datas-calendario);   
 }
 
 .calendario-data-rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
+    font-size: 30px;
+    gap: 10px;
 }
 
 .calendario-data-rodape button{
-    
     background-color: var(--azul-claro);
     color: var(--branco);
     border: 0;
-    
+    font-size: var(--botao-signup-calendario);
     padding: 10px;
+    width: 250px;
     border-radius: 5px 5px;
     
 }
 
+.secaoContato {
+    
+}
+
+.flex-col {
+    padding-right: 50px;
+}
+.flex-col a {
+    color: var(--cinza-claro);
+}
+
+.secaoContato-informacoes li{
+    padding: 10px 0px;
+}
 /* INICIAL */
 
 /* EXTRAS */
@@ -387,7 +403,7 @@ li h3 {
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 960px) {
 
 article div.flex-col h2{
     margin: 30px 0px;
@@ -429,5 +445,19 @@ article div.flex-col ul{
 article div.flex-col ul li{
     margin: 10px 0px;
 } 
-    }
+.secaoCursos ul{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.secaoCalendar ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin: auto;
+}
+
+}
 /* MEDIA QUERIES */
