@@ -1,0 +1,35 @@
+:root {
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
+    --secao-sobre: #f6f6f6;
+    --font-h2: 'Montserrat';
+    --todo-site: 'Lato';
+
+    /* MENU */
+    --links-menu: 13px;
+
+    /* SEÇÃO DESTAQUES */
+    --titulo-destaque: 63px;
+    --subtitulo-destaque: 21px;
+    --botao-subcribe: 14px;
+
+    /* SEÇÃO SOBRE */
+    --titulo-sobre: 24px;
+    --texto-sobre: 19px;
+
+    /* SEÇÃO CURSES */
+    --titulo-itens: 19px;
+    --texto-itens: 15px;
+
+    /* SEÇÃO CALENDÁRIO */
+    --datas-calendario: 30px;
+    --titulo-calendario: 19px;
+    --texto-calendario: 15px;
+    --botao-signup-calendario: 32px;
+
+    /* SEÇÃO CONTATO */
+    --informacoes-contato: 15px;
+  }

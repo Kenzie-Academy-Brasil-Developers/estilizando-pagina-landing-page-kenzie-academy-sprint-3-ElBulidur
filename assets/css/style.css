@@ -39,6 +39,9 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+h2{
+    font-family: var(--font-h2);
+}
 img{
     max-width: 800px;
 }
@@ -51,9 +54,12 @@ div.full-container{
     margin:0 auto;
 }
 div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 div.container{
     width: 100%;
@@ -67,13 +73,181 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    font-family: var(--todo-site);
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+}
 /* HEADER */
-  
+.topo{
+    width: 100vw;
+    height: 92px;
+    background-color: var(--azul-escuro);
+}
+.large-container{}
+.large-container figure img{
+    width: 15vw;
+    height: 10vh;
+}
+.large-container figure{
+}
+.large-container figure figcaption{
+    display: none;
+}
+.topo nav::before{
+    content: "H";
+}
+
+.topo nav:active{
+    content: attr();
+    text-align: end;
+    width: 100%;
+}
+.topo nav ul{
+
+    display: none;
+}
+.topo nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.topo nav ul li a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: var(--links-menu);
+}
+.topo nav ul li a:active{}
+
+.secaoDestaque{
+    color: var(--branco);
+    width: 100vw;
+    height: 80vh;
+    padding: 25px;
+    box-sizing: border-box;
+    background-image: url(/assets/img/background-destaque.webp);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secaoDestaque h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.secaoDestaque p{
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.secaoDestaque .secaoDestaqueFormulario{
+    width: 80%;
+    margin: 0px auto;
+}
+.secaoDestaque .secaoDestaqueFormulario input{
+    width: 73%;
+    height: 33px;
+    border-radius: 7px 0px 0px 7px;
+    border: 0px;
+}
+.secaoDestaque .secaoDestaqueFormulario button{
+    width: 96px;
+    height: 33px;
+    border-radius: 0px 7px 7px 0px;
+    margin-left: -7px;
+    border: 0px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
+
+.secaoSobre{
+    width: 100vw;
+    height: auto;
+}
+
+article.flex{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+article div.flex-col{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article div.sobre1{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+article div.sobre2{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--secao-sobre);
+}
+article div.flex-col h2{
+    margin: 30px 0px;
+    font-size: 21x;
+}
+article div.flex-col p{
+    font-size: 21px;
+}
+article div.flex-col span{
+    margin: 30px 0px;
+    font-size: 14px;
+    color: var(--cinza-claro);
+}
+article div.flex-col button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--branco);
+    font-weight: bold;
+}
+article div.flex-col figure{
+    margin: auto;
+    width: 253px;
+    height: 253px;
+}
+article div.flex-col figure img{
+    width: 100%;
+    height: 90%;
+}
+article div.flex-col figure figcaption{
+    display: none;
+}
+article div.flex-col ul{
+    margin: 30px 0px;
+    font-size: 14px;
+    color: var(--cinza-escuro);
+    list-style: square;
+}
+article div.flex-col ul li{
+    margin: 10px 0px;
+}
+
+
+
 /* FOOTER */
 footer{}
 /* FOOTER */
@@ -99,5 +273,46 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+
+article div.flex-col h2{
+    margin: 30px 0px;
+    font-size: 21x;
+}
+article div.flex-col p{
+    font-size: 21px;
+}
+article div.flex-col span{
+    margin: 30px 0px;
+    font-size: 14px;
+    color: var(--cinza-claro);
+}
+article div.flex-col button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--branco);
+    font-weight: bold;
+}
+article div.flex-col figure{
+    margin: auto;
+    width: 253px;
+    height: 253px;
+}
+article div.flex-col figure img{
+    width: 100%;
+    height: 90%;
+}
+article div.flex-col figure figcaption{
+    display: none;
+}
+article div.flex-col ul{
+    margin: 30px 0px;
+    font-size: 14px;
+    color: var(--cinza-escuro);
+    list-style: square;
+}
+article div.flex-col ul li{
+    margin: 10px 0px;
+}
+    }
 /* MEDIA QUERIES */
