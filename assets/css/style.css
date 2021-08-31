@@ -29,7 +29,7 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -246,14 +246,114 @@ article div.flex-col ul li{
     margin: 10px 0px;
 }
 
-
+label {
+    display: none;
+}
 
 /* FOOTER */
-footer{}
+footer{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* FOOTER */
 
 /* INICIAL */
 main{}
+p {
+    color: var(--cinza-claro);
+}
+
+.secaoCursos {
+    background-color: var(--branco);
+    display: grid;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.secaoCursos img {
+    width: 100px;
+    height: 100px;
+}
+
+.secaoCursos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoCursos ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.secaoCursos li {
+   
+    gap: 10px;
+    display: grid;
+    justify-items: center;
+    width: 25%;
+}
+
+article p {
+    padding: 50px;
+}
+.secaoCalendar {
+    display: grid;
+    justify-items: center;
+}
+.secaoCalendar .calendario{
+    display: flex;
+    gap: 30px;
+}
+
+.calendario li  {
+    border: 2px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    height: 425px;
+}
+
+.calendario-data {
+    background: var(--azul-escuro);
+    font-size: var(--botao-signup-calendario);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.calendario-data-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--botao-signup-calendario);
+}
+
+.calendario-data-rodape button{
+    font-size: var(--botao-signup-calendario);
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border: 0;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px 5px;
+    
+}
+
 /* INICIAL */
 
 /* EXTRAS */
