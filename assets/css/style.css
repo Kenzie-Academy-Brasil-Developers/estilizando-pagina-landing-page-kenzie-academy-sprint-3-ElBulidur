@@ -175,7 +175,7 @@ header{
 .secaoDestaque{
     color: var(--branco);
     width: 100vw;
-    background-image: url(/assets/img/background-destaque.webp);
+    background-image: url(../assets/img/background-destaque.webp);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
